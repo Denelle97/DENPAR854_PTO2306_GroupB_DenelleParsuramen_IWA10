@@ -79,9 +79,12 @@ console.log("New date is earlier:", isEarlier);
 
 if (isEarlier) {
     copied.date = correctDate;
-  console.log("ID change:", holidays[6].id != copied.id ? copied.id : "false"); //log false if nothing has been changed
-  console.log("Name change:", holidays[6].name != copied.name ? "false" : copied.name); // Log whether the name of the Christmas holiday has changed
-  console.log("Date change:", holidays[6].date != copied.date ? "false" : copied.date.toLocaleDateString("en-GB")); // Log whether the date of the Christmas holiday has changed
+    //log false if nothing has been changed
+  console.log("ID change:", holidays[6].id != copied.id ? copied.id : "false"); 
+  // Log whether the name of the Christmas holiday has changed
+  console.log("Name change:", holidays[6].name != copied.name ? "false" : copied.name); 
+  // Log whether the date of the Christmas holiday has changed
+  console.log("Date change:", holidays[6].date != copied.date ? "false" : copied.date.toLocaleDateString("en-GB")); 
 }
 
 /**  
